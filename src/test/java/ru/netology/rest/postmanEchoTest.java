@@ -13,7 +13,7 @@ public class postmanEchoTest {
         String text = "hi";
         given()
                 .baseUri("https://postman-echo.com")
-                .body(text)
+                .body("hello")
                 .when()
                 .post("/post")
                 .then()
